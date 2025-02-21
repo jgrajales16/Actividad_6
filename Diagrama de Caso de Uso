@@ -1,0 +1,6 @@
+@startuml
+
+actor Usuario
+Usuario --> ("Sistema de Gestion de Amigos")
+
+@enduml
