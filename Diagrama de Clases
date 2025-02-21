@@ -1,0 +1,22 @@
+@startuml
+
+class Friend {
+    - String name
+    - long number
+    + Friend()
+    + getName(): String
+    + getNumber(): long
+    + setName(name: String): void
+    + setNumber(number: long): void
+}
+
+class FriendManager {
+    + addFriend(name: String, number: long): void
+    + DisplayFriend(): void
+    + UpdateFriend(name: String, newNumber: long): void
+    + DeleteFriend(name: String): void
+}
+
+FriendManager --> Friend
+
+@enduml
